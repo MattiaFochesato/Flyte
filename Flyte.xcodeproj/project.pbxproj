@@ -12,6 +12,7 @@
 		2698EFEA2763569D0037DB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2698EFE92763569D0037DB01 /* Assets.xcassets */; };
 		2698EFED2763569D0037DB01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2698EFEC2763569D0037DB01 /* Preview Assets.xcassets */; };
 		2698EFF5276359000037DB01 /* TravelPlaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */; };
+		2698EFF7276373970037DB01 /* TopDestinationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFF6276373970037DB01 /* TopDestinationCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2698EFE92763569D0037DB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2698EFEC2763569D0037DB01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPlaceCardView.swift; sourceTree = "<group>"; };
+		2698EFF6276373970037DB01 /* TopDestinationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDestinationCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				2698EFE72763569C0037DB01 /* DashboardView.swift */,
 				2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */,
+				2698EFF6276373970037DB01 /* TopDestinationCardView.swift */,
 			);
 			path = "Dashboard View";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2698EFE82763569C0037DB01 /* DashboardView.swift in Sources */,
+				2698EFF7276373970037DB01 /* TopDestinationCardView.swift in Sources */,
 				2698EFF5276359000037DB01 /* TravelPlaceCardView.swift in Sources */,
 				2698EFE62763569C0037DB01 /* Flyte_App.swift in Sources */,
 			);

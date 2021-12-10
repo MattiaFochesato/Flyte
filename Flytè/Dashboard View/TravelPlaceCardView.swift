@@ -27,6 +27,7 @@ struct TravelPlaceCardView: View {
         VStack(alignment: .leading) {
             Image(travelPlace.image)
                 .resizable()
+                //.aspectRatio(nil, contentMode: .fill)
                 //.scaledToFill()
                 .shadow(color: .black, radius: 10, x: 0, y: -4)
             Spacer()
