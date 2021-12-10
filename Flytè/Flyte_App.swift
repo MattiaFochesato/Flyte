@@ -11,7 +11,13 @@ import SwiftUI
 struct Flyte_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                DashboardView().tabItem {
+                    Label("Dashboard", systemImage: "airplane")
+                }
+                
+            }
+            .accentColor(Color("AccentColor"))
         }
     }
 }

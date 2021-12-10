@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2698EFE62763569C0037DB01 /* Flyte_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFE52763569C0037DB01 /* Flyte_App.swift */; };
-		2698EFE82763569C0037DB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFE72763569C0037DB01 /* ContentView.swift */; };
+		2698EFE82763569C0037DB01 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFE72763569C0037DB01 /* DashboardView.swift */; };
 		2698EFEA2763569D0037DB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2698EFE92763569D0037DB01 /* Assets.xcassets */; };
 		2698EFED2763569D0037DB01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2698EFEC2763569D0037DB01 /* Preview Assets.xcassets */; };
+		2698EFF5276359000037DB01 /* TravelPlaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2698EFE22763569C0037DB01 /* Flytè.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flytè.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2698EFE22763569C0037DB01 /* Flyte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flyte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2698EFE52763569C0037DB01 /* Flyte_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyte_App.swift; sourceTree = "<group>"; };
-		2698EFE72763569C0037DB01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2698EFE72763569C0037DB01 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		2698EFE92763569D0037DB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2698EFEC2763569D0037DB01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPlaceCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,7 @@
 		2698EFE32763569C0037DB01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2698EFE22763569C0037DB01 /* Flytè.app */,
+				2698EFE22763569C0037DB01 /* Flyte.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +53,8 @@
 		2698EFE42763569C0037DB01 /* Flytè */ = {
 			isa = PBXGroup;
 			children = (
+				2698EFF3276358E00037DB01 /* Dashboard View */,
 				2698EFE52763569C0037DB01 /* Flyte_App.swift */,
-				2698EFE72763569C0037DB01 /* ContentView.swift */,
 				2698EFE92763569D0037DB01 /* Assets.xcassets */,
 				2698EFEB2763569D0037DB01 /* Preview Content */,
 			);
@@ -67,12 +69,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2698EFF3276358E00037DB01 /* Dashboard View */ = {
+			isa = PBXGroup;
+			children = (
+				2698EFE72763569C0037DB01 /* DashboardView.swift */,
+				2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */,
+			);
+			path = "Dashboard View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2698EFE12763569B0037DB01 /* Flytè */ = {
+		2698EFE12763569B0037DB01 /* Flyte */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2698EFF02763569D0037DB01 /* Build configuration list for PBXNativeTarget "Flytè" */;
+			buildConfigurationList = 2698EFF02763569D0037DB01 /* Build configuration list for PBXNativeTarget "Flyte" */;
 			buildPhases = (
 				2698EFDE2763569B0037DB01 /* Sources */,
 				2698EFDF2763569B0037DB01 /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "Flytè";
+			name = Flyte;
 			productName = "Flytè";
-			productReference = 2698EFE22763569C0037DB01 /* Flytè.app */;
+			productReference = 2698EFE22763569C0037DB01 /* Flyte.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2698EFDD2763569B0037DB01 /* Build configuration list for PBXProject "Flytè" */;
+			buildConfigurationList = 2698EFDD2763569B0037DB01 /* Build configuration list for PBXProject "Flyte" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2698EFE12763569B0037DB01 /* Flytè */,
+				2698EFE12763569B0037DB01 /* Flyte */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2698EFE82763569C0037DB01 /* ContentView.swift in Sources */,
+				2698EFE82763569C0037DB01 /* DashboardView.swift in Sources */,
+				2698EFF5276359000037DB01 /* TravelPlaceCardView.swift in Sources */,
 				2698EFE62763569C0037DB01 /* Flyte_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +294,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matf.Flyte-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matf.Flyte;
+				PRODUCT_NAME = Flyte;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,8 +323,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matf.Flyte-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matf.Flyte;
+				PRODUCT_NAME = Flyte;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2698EFDD2763569B0037DB01 /* Build configuration list for PBXProject "Flytè" */ = {
+		2698EFDD2763569B0037DB01 /* Build configuration list for PBXProject "Flyte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2698EFEE2763569D0037DB01 /* Debug */,
@@ -331,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2698EFF02763569D0037DB01 /* Build configuration list for PBXNativeTarget "Flytè" */ = {
+		2698EFF02763569D0037DB01 /* Build configuration list for PBXNativeTarget "Flyte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2698EFF12763569D0037DB01 /* Debug */,
