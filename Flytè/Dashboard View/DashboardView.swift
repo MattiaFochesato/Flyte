@@ -32,7 +32,12 @@ struct DashboardView: View {
                 //#### END TRAVEL PLACES SECTION ####
                 
                 //#### PLAN TRIP SECTION
-                //TODO: implement
+                Text("Plan Your Next Trip")
+                    .font(.title).bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 12)
+                    .padding(.bottom, -6)
+                PlanNextTripCardView()
                 //#### END PLAN TRIP SECTION ####
                 
                 //#### TOP DESTINATIONS SECTION

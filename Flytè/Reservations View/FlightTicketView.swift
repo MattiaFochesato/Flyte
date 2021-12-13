@@ -27,6 +27,7 @@ struct FlightTicketView: View {
                     Text("NAP")
                         .font(.title)
                         .bold()
+                        .padding([.top, .bottom], -6)
                     Text("Naples")
                         .bold()
                         .foregroundColor(.gray)
@@ -40,6 +41,7 @@ struct FlightTicketView: View {
                             Color.clear
                             Text("10 Dec 2021")
                                 .bold()
+                                .padding(.top, 16)
                         }
                         Rectangle()
                             .foregroundColor(Color("AccentColor"))
@@ -64,14 +66,15 @@ struct FlightTicketView: View {
                     Text("MXP")
                         .font(.title)
                         .bold()
+                        .padding([.top, .bottom], -6)
                     Text("Milan")
                         .bold()
                         .foregroundColor(.gray)
                 }
                 
             }
-            .padding([.leading, .trailing])
-            .padding(.top)
+            .padding([.leading, .trailing], 20)
+            .padding(.top, 0)
             .frame(height: 120)
             
             Line()
@@ -248,35 +251,35 @@ struct FlightTicketView: View {
                     
                     
                     Spacer()
-                }.padding([.trailing, .leading], 10)
+                }
+                .padding([.trailing, .leading], 10)
+                .padding(.top, 10)
             }
             
             Spacer()
         }
-        .frame(height: (ticketType == .ticket ? 490 : (ticketType == .booking ? 275 : 255)))
+        .frame(height: (ticketType == .ticket ? 490 : (ticketType == .booking ? 275 : 270)))
         .background(Color("TravelPlaceCardColor"))
         .cornerRadius(16)
+        .clipShape(PassShape())
         .shadow(color: Color("ShadowColor"), radius: 6, x: 6, y: 6)
-        //.clipShape(Circle())
+        
     }
 }
-/*
- struct PassShape: Shape {
- 
- func path(in rect: CGRect) -> Path {
- let path = UIBezierPath()
- path.move(to: bounds.origin)
- let center = CGPoint(x: bounds.midX, y: bounds.minY)
- path.addArc(withCenter: center, radius: radius, startAngle: .pi, endAngle: 0, clockwise: false)
- path.addLine(to: CGPoint(x: bounds.maxX, y: bounds.minY))
- path.addLine(to: CGPoint(x: bounds.maxX, y: bounds.maxY))
- path.addLine(to: CGPoint(x: bounds.minX, y: bounds.maxY))
- path.close()
- 
- return path
- }
- 
- }*/
+
+//Create the cutout in the shape of the ticket
+struct PassShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            path.move(to: CGPoint(x:0, y: 0))
+            path.addLine(to: CGPoint(x:rect.width, y:0))
+            path.addArc(center: CGPoint(x: rect.width, y: /*rect.height/4*/130), radius: /*rect.height/16*/25, startAngle: .degrees(270), endAngle: .degrees(90), clockwise: true )
+            path.addLine(to: CGPoint(x:rect.width, y:rect.height))
+            path.addLine(to: CGPoint(x:0, y:rect.height))
+            path.addArc(center: CGPoint(x: 0, y: /*rect.height/4*/130), radius: /*rect.height/16*/25, startAngle: .degrees(90), endAngle: .degrees(270), clockwise: true )
+        }
+    }
+}
 
 //Line to create a dashed line
 struct Line: Shape {
@@ -296,7 +299,12 @@ struct FlightTicketView_Previews: PreviewProvider {
                 .padding()
                 .previewDisplayName("Light preview")
             
-            FlightTicketView(ticketType: .dashboard)
+            FlightTicketView(ticketType: .booking)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .previewDisplayName("Light preview")
+            
+            FlightTicketView(ticketType: .ticket)
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .environment(\.colorScheme, .dark)
