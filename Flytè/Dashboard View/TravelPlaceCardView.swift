@@ -44,7 +44,7 @@ struct TravelPlaceCardView: View {
         .frame(width: 300, height: 250)
         .background(Color("TravelPlaceCardColor"))
         .cornerRadius(16)
-        .shadow(color: .gray, radius: 6, x: 6, y: 6)
+        .shadow(color: Color("ShadowColor"), radius: 6, x: 6, y: 6)
         
     }
 }

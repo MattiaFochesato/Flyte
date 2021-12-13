@@ -16,6 +16,10 @@ struct Flyte_App: App {
                     Label("Dashboard", systemImage: "airplane")
                 }
                 
+                FlightsListView().tabItem {
+                    Label("Your Flights", systemImage: "airplane.departure")
+                }
+                
             }
             .accentColor(Color("AccentColor"))
         }

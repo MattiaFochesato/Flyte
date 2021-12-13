@@ -54,6 +54,15 @@ struct DashboardView: View {
                     .padding(.top, 8)
                 }
                 //#### END TOP DESTINATIONS SECTION ####
+                Text("Your Next Flight")
+                    .font(.title).bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 12)
+                    .padding(.bottom, -6)
+                FlightTicketView(ticketType: .dashboard)
+                    .padding([.leading, .trailing], 12)
+                    .padding([.bottom], 20)
+                    .padding(.top, 8)
             }
         }.background(Color("MainScrollViewColor"))
     }

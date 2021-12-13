@@ -13,6 +13,8 @@
 		2698EFED2763569D0037DB01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2698EFEC2763569D0037DB01 /* Preview Assets.xcassets */; };
 		2698EFF5276359000037DB01 /* TravelPlaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */; };
 		2698EFF7276373970037DB01 /* TopDestinationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFF6276373970037DB01 /* TopDestinationCardView.swift */; };
+		2698EFFA2763781E0037DB01 /* FlightsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFF92763781E0037DB01 /* FlightsListView.swift */; };
+		2698EFFC276378510037DB01 /* FlightTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFFB276378510037DB01 /* FlightTicketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2698EFEC2763569D0037DB01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2698EFF4276359000037DB01 /* TravelPlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPlaceCardView.swift; sourceTree = "<group>"; };
 		2698EFF6276373970037DB01 /* TopDestinationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDestinationCardView.swift; sourceTree = "<group>"; };
+		2698EFF92763781E0037DB01 /* FlightsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListView.swift; sourceTree = "<group>"; };
+		2698EFFB276378510037DB01 /* FlightTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		2698EFE42763569C0037DB01 /* Flytè */ = {
 			isa = PBXGroup;
 			children = (
+				2698EFF8276378050037DB01 /* Reservations View */,
 				2698EFF3276358E00037DB01 /* Dashboard View */,
 				2698EFE52763569C0037DB01 /* Flyte_App.swift */,
 				2698EFE92763569D0037DB01 /* Assets.xcassets */,
@@ -79,6 +84,15 @@
 				2698EFF6276373970037DB01 /* TopDestinationCardView.swift */,
 			);
 			path = "Dashboard View";
+			sourceTree = "<group>";
+		};
+		2698EFF8276378050037DB01 /* Reservations View */ = {
+			isa = PBXGroup;
+			children = (
+				2698EFF92763781E0037DB01 /* FlightsListView.swift */,
+				2698EFFB276378510037DB01 /* FlightTicketView.swift */,
+			);
+			path = "Reservations View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2698EFFA2763781E0037DB01 /* FlightsListView.swift in Sources */,
 				2698EFE82763569C0037DB01 /* DashboardView.swift in Sources */,
 				2698EFF7276373970037DB01 /* TopDestinationCardView.swift in Sources */,
 				2698EFF5276359000037DB01 /* TravelPlaceCardView.swift in Sources */,
+				2698EFFC276378510037DB01 /* FlightTicketView.swift in Sources */,
 				2698EFE62763569C0037DB01 /* Flyte_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

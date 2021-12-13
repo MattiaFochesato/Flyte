@@ -16,8 +16,8 @@ struct TopDestination: Hashable {
     
     
     static let destinationsList = [
-        TopDestination(image: "SantElmo", placeName: "Naples", placePosition: "Italy", startingPrice: "12,99€"),
-        TopDestination(image: "SantElmo", placeName: "Naples", placePosition: "Italy", startingPrice: "12,99€"),
+        TopDestination(image: "Naples", placeName: "Naples", placePosition: "Italy", startingPrice: "12,99€"),
+        TopDestination(image: "London", placeName: "London", placePosition: "England", startingPrice: "22,99€"),
         TopDestination(image: "SantElmo", placeName: "Naples", placePosition: "Italy", startingPrice: "12,99€"),
     ]
 }
@@ -54,7 +54,7 @@ struct TopDestinationCardView: View {
         .frame(width: 200, height: 70)
         .background(Color("TravelPlaceCardColor"))
         .cornerRadius(16)
-        .shadow(color: .gray, radius: 6, x: 6, y: 6)
+        .shadow(color: Color("ShadowColor"), radius: 6, x: 6, y: 6)
         
     }
 }
