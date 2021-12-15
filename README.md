@@ -1,3 +1,4 @@
+
 # NC2 - Mattia Fochesato
 <p align="center">
 <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" />
@@ -16,6 +17,4 @@ I tried to recreate the start page and the ticket list.
 The design was created with **Sketch** and then rewritten in **SwiftUI**.
 
 ## Design
-
-
-
+![Design Preview](assets/design.png?raw=true)
