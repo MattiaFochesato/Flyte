@@ -53,7 +53,7 @@ struct TravelPlaceCardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TravelPlaceCardView(travelPlace: TravelPlaceInfo.placesList.first!)
-                
+            
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .previewDisplayName("Default preview")
