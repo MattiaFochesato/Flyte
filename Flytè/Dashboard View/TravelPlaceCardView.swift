@@ -35,7 +35,7 @@ struct TravelPlaceCardView: View {
                 .font(.title2).bold()
                 .padding(.leading, 12)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text("􀜈 \(travelPlace.placePosition)")
+            Text("\(Image(systemName: "mappin.circle.fill")) \(travelPlace.placePosition)")
                 .foregroundColor(Color("SecondaryTextColor"))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.bottom, 6)

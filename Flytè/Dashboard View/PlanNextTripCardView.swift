@@ -64,7 +64,7 @@ struct PlanNextTripItem: View {
                 .font(.system(.body).bold())
                 .foregroundColor(Color.accentColor)
         }.padding([.leading, .trailing], 10)
-            .padding([.top, .bottom], 12)
+            .padding([.top, .bottom], 14)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color("InputCornerColor"), lineWidth: 2))
