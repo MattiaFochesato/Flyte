@@ -23,6 +23,14 @@ struct FlightsListView: View {
                     .padding(.top, 8)
             }
             .navigationTitle("Your Flights")
+            .toolbar {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "magnifyingglass")
+                }
+                
+            }
         }
     }
 }

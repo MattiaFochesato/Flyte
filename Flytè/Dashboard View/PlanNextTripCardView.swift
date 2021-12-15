@@ -29,7 +29,7 @@ struct PlanNextTripCardView: View {
             Button(action: {
                 
             }) {
-                Image(systemName: "bag.fill")
+                Image(systemName: "magnifyingglass")
                 Text("Search Flights")
             }.foregroundColor(.white)
                 .font(.system(.headline).bold())

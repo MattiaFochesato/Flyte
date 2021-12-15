@@ -22,7 +22,7 @@ struct DashboardView: View {
                         HStack {
                             ForEach(TravelPlaceInfo.placesList, id: \.self) { place in
                                 TravelPlaceCardView(travelPlace: place)
-                                    //.padding(.leading, 8)
+                                //.padding(.leading, 8)
                                     .padding(.trailing, 10)
                             }
                         }
@@ -55,7 +55,7 @@ struct DashboardView: View {
                         HStack {
                             ForEach(TopDestination.destinationsList, id: \.self) { place in
                                 TopDestinationCardView(destination: place)
-                                    //.padding(.leading, 8)
+                                //.padding(.leading, 8)
                                     .padding(.trailing, 10)
                             }
                         }
@@ -76,6 +76,14 @@ struct DashboardView: View {
                 }
             }.background(Color("MainScrollViewColor"))
                 .navigationTitle("Dashboard")
+                .toolbar {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "bell.badge")
+                    }
+                    
+                }
         }
     }
 }
