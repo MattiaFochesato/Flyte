@@ -61,6 +61,7 @@ struct PlanNextTripItem: View {
                 .lineLimit(1)
             Spacer()
             Image(systemName: "chevron.down")
+                .font(.system(.body).bold())
                 .foregroundColor(Color.accentColor)
         }.padding([.leading, .trailing], 10)
             .padding([.top, .bottom], 12)
