@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2657535E2767571F008AD0DC /* PlanNextTripCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657535D2767571F008AD0DC /* PlanNextTripCardView.swift */; };
+		2669E2852769D9E1003A7292 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2669E2842769D9E1003A7292 /* README.md */; };
 		2698EFE62763569C0037DB01 /* Flyte_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFE52763569C0037DB01 /* Flyte_App.swift */; };
 		2698EFE82763569C0037DB01 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698EFE72763569C0037DB01 /* DashboardView.swift */; };
 		2698EFEA2763569D0037DB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2698EFE92763569D0037DB01 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		2657535D2767571F008AD0DC /* PlanNextTripCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanNextTripCardView.swift; sourceTree = "<group>"; };
+		2669E2842769D9E1003A7292 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2698EFE22763569C0037DB01 /* Flyte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flyte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2698EFE52763569C0037DB01 /* Flyte_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyte_App.swift; sourceTree = "<group>"; };
 		2698EFE72763569C0037DB01 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		2698EFD92763569B0037DB01 = {
 			isa = PBXGroup;
 			children = (
+				2669E2842769D9E1003A7292 /* README.md */,
 				2698EFE42763569C0037DB01 /* Flytè */,
 				2698EFE32763569C0037DB01 /* Products */,
 			);
@@ -156,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2669E2852769D9E1003A7292 /* README.md in Resources */,
 				2698EFED2763569D0037DB01 /* Preview Assets.xcassets in Resources */,
 				2698EFEA2763569D0037DB01 /* Assets.xcassets in Resources */,
 			);
