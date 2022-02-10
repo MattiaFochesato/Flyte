@@ -1,5 +1,5 @@
 
-# NC2 - Mattia Fochesato
+# Flyte - Mattia Fochesato
 <p align="center">
 <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" />
 <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" />
@@ -11,8 +11,7 @@
 
 ## What is this?
 
-The purpose of this challenge is to pick an application from the App Store and **recreate some views**.
-In my case I wanted to try to focus on the design of the **Volotea** app.
+I wanted to try to focus on the design of the **Volotea** app.
 I tried to recreate the start page and the ticket list.
 The design was created with **Sketch** and then rewritten in **SwiftUI**.
 
